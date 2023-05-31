@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body, html, #root{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.gradiente{
+  background: linear-gradient(20.21deg, #000000 29.17%, #000000 60.99%, rgba(177, 0, 4,0) 100%);
+}
+
+/* make the scrollbar black with a white dot and make it slimmer */
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #000000;
+}
+
+/* hover effect for both scrollbar area, and scrollbar 'thumb' */
+::-webkit-scrollbar:hover {
+  background-color: #000000;
+}
+
+/* set scrollbar 'thumb' background colour and make it transition while hovering */
+::-webkit-scrollbar-thumb {
+  background: #555555;
+  transition: background 0.2s ease-in-out;
+  /* rounded */
+  border-radius: 10px;
+  /* smaller */
+  border: 3px solid #000000;
+}
+
+/* On hover, make scrollbar 'thumb' darker */
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9c9c9c;
+}
